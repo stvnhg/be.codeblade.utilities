@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Reflection;
 
-namespace be.codeblade.extensions
+namespace be.codeblade.extensions 
 {
     /// <summary>Create a new PropertyComparer to compare the properties of the given object.</summary>
     /// <typeparam name="T">The object you want to compare</typeparam>
