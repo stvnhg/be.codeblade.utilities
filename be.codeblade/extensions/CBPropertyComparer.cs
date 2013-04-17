@@ -6,7 +6,7 @@ namespace be.codeblade.extensions
 {
     /// <summary>Create a new PropertyComparer to compare the properties of the given object.</summary>
     /// <typeparam name="T">The object you want to compare</typeparam>
-    public class CBPropertyComparer<T> : IEqualityComparer<T>
+    public class CBPropertyComparer<T> : IEqualityComparer<T> 
     {
         private PropertyInfo _PropertyInfo;
 
