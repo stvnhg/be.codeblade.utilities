@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6B17F802-F8F5-4038-80BE-2E46ABD5DCD1}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>be.codeblade</RootNamespace>
+    <AssemblyName>be.codeblade</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="controls\CBConfigurationService.cs" />
+    <Compile Include="controls\CBOgoneService.cs" />
+    <Compile Include="controls\CBPaging.cs" />
+    <Compile Include="controls\CBQueryStringGenerator.cs" />
+    <Compile Include="controls\CBResourceService.cs" />
+    <Compile Include="controls\CBRssGenerator.cs" />
+    <Compile Include="data\CBEnumerations.cs" />
+    <Compile Include="data\CBOgoneRequest.cs" />
+    <Compile Include="data\CBOgoneResponse.cs" />
+    <Compile Include="data\CBPaging.cs" />
+    <Compile Include="data\CBRssChannel.cs" />
+    <Compile Include="data\CBRssItem.cs" />
+    <Compile Include="extensions\CBDateTimeMethods.cs" />
+    <Compile Include="extensions\CBEnumerationsMethods.cs" />
+    <Compile Include="extensions\CBListExtensions.cs" />
+    <Compile Include="extensions\CBNameValueCollectionMethods.cs" />
+    <Compile Include="extensions\CBPropertyComparer.cs" />
+    <Compile Include="extensions\CBSessionMethods.cs" />
+    <Compile Include="extensions\CBTraceMethods.cs" />
+    <Compile Include="extensions\CBXmlMethods.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="services\CBEncryptionService.cs" />
+    <Compile Include="services\CBHtmlService.cs" />
+    <Compile Include="services\CBLanguageManager.cs" />
+    <Compile Include="services\CBMobileService.cs" />
+    <Compile Include="services\CBServices.cs" />
+    <Compile Include="services\CBXsltTransformationService.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
